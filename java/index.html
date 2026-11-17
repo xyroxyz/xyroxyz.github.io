@@ -1,1 +1,215 @@
-placeholder
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Air Mineral — Air Mineral Murni, Segar Setiap Hari</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Archivo', system-ui, sans-serif; background:#f2f8fd; color:#0a2a4a; padding-bottom:76px; }
+  .wrap { max-width:440px; margin:0 auto; }
+  nav { position:sticky; top:0; z-index:30; background:#fff; display:flex; align-items:center; justify-content:space-between;
+    padding:12px 18px; box-shadow:0 2px 14px rgba(10,90,160,.12); }
+  .brand { display:flex; align-items:center; gap:8px; font-weight:900; font-size:19px; letter-spacing:.5px; color:#0a4d8f; }
+  .brand small { color:#12a0e8; }
+  nav .icons { display:flex; gap:16px; align-items:center; }
+  .hero { background:radial-gradient(ellipse at 85% -10%, #7ed3ff 0%, transparent 55%),
+    radial-gradient(ellipse at -10% 110%, #35b6f0 0%, transparent 50%),
+    linear-gradient(160deg,#0a6fd0 0%,#0a86d9 55%,#12a0e8 100%);
+    color:#fff; padding:28px 20px 24px; overflow:hidden; }
+  .hero h1 { font-size:35px; font-weight:900; line-height:1.12; letter-spacing:.2px; text-transform:uppercase; }
+  .hero p { margin-top:12px; font-size:14px; line-height:1.55; color:#e3f4ff; max-width:320px; }
+  .btn-buy { display:inline-block; margin-top:17px; background:#fff; color:#0a5cad; font-weight:800; font-size:14.5px;
+    padding:13px 24px; border-radius:999px; text-decoration:none; box-shadow:0 8px 20px rgba(0,40,90,.3); }
+  .hero-card { margin-top:22px; background:#fff; border-radius:22px; padding:14px 16px; display:flex; align-items:center; gap:14px;
+    box-shadow:0 14px 30px rgba(0,40,90,.28); color:#0a2a4a; }
+  .hero-card img { width:86px; height:104px; object-fit:contain; }
+  .hero-card .t b { font-size:16.5px; display:block; }
+  .hero-card .t span { font-size:12.5px; color:#5b7d94; display:block; margin-top:3px; line-height:1.45; }
+  .hero-card .t .pr { margin-top:8px; font-size:18px; font-weight:900; color:#0a6fd0; }
+  .hero-card .t .pr s { font-size:12.5px; color:#9db6c6; font-weight:600; margin-right:6px; }
+  section { padding:24px 16px 2px; }
+  .sec-head { display:flex; align-items:baseline; justify-content:space-between; padding:0 2px; }
+  h2 { font-size:20px; font-weight:800; }
+  .sec-head a { font-size:13px; color:#0a6fd0; text-decoration:none; font-weight:700; }
+  .sub { font-size:13px; color:#5b7d94; margin-top:5px; padding:0 2px; line-height:1.5; }
+  .row-scroll { display:flex; gap:12px; overflow-x:auto; padding:14px 2px 8px; scrollbar-width:none; }
+  .row-scroll::-webkit-scrollbar { display:none; }
+  .p-card { flex:0 0 158px; background:#fff; border-radius:18px; padding:12px; position:relative;
+    box-shadow:0 5px 16px rgba(10,90,160,.1); }
+  .p-card .ph { height:118px; display:flex; align-items:center; justify-content:center; }
+  .p-card .ph img { max-height:112px; max-width:92%; object-fit:contain; }
+  .p-card .nm { font-weight:700; font-size:14px; margin-top:8px; }
+  .p-card .pr { font-weight:900; color:#0a6fd0; font-size:16.5px; margin-top:3px; }
+  .p-card .rt { font-size:11.5px; color:#7d99ad; margin-top:4px; }
+  .p-card .rt b { color:#f5a623; }
+  .ribbon { position:absolute; top:10px; left:10px; background:#0a86d9; color:#fff; font-size:10px; font-weight:800;
+    padding:4px 9px; border-radius:999px; letter-spacing:.4px; }
+  .wa-bar { display:flex; align-items:center; gap:13px; background:#1fc24b; color:#fff; text-decoration:none;
+    margin:16px; padding:16px 18px; border-radius:18px; box-shadow:0 10px 24px rgba(31,194,75,.35); }
+  .wa-bar b { font-size:17.5px; display:block; }
+  .wa-bar span { font-size:12.5px; color:#dcffdf; }
+  .trust { display:flex; justify-content:space-between; gap:8px; padding:2px 18px 4px; }
+  .trust div { flex:1; display:flex; align-items:center; gap:7px; font-size:11px; font-weight:700; line-height:1.35; color:#33526b; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="brand">
+      <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M12 2.7C12 2.7 5.5 10.6 5.5 15.2C5.5 18.9 8.4 21.5 12 21.5C15.6 21.5 18.5 18.9 18.5 15.2C18.5 10.6 12 2.7 12 2.7Z" fill="#12a0e8"/><path d="M9 15.2C9 17 10.2 18.4 11.8 18.7" stroke="#0a5cad" stroke-width="1.8" stroke-linecap="round"/></svg>
+      JAVA<small>+</small>
+    </div>
+    <div class="icons">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#0a2a4a" stroke-width="2.2"/><path d="M16.5 16.5L21 21" stroke="#0a2a4a" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 4H5.5L7.5 15.5H18.5L20.5 8H6.2" stroke="#0a2a4a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.7" fill="#0a2a4a"/><circle cx="17" cy="20" r="1.7" fill="#0a2a4a"/></svg>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Air Mineral Murni Segar Setiap Hari</h1>
+    <p>Air mineral murni dari mata air pegunungan Merbabu, Telomoyo &amp; Gunung Gajah. Pesan sekarang, diantar sampai rumah!</p>
+    <a class="btn-buy" href="#produk">BELI SEKARANG &#8594;</a>
+    <div class="hero-card">
+      <img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Galon-1.webp" alt="Java Galon 19L">
+      <div class="t">
+        <b>Galon 19L — Terlaris</b>
+        <span>Untuk kantor &amp; rumah. Isi ulang atau galon baru, tinggal pilih.</span>
+        <div class="pr"><s>Rp22.000</s>Rp18.000</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="produk">
+    <div class="sec-head"><h2>Produk Terlaris</h2><a href="#semua-produk">Lihat Semua &#8250;</a></div>
+    <div class="row-scroll">
+      <div class="p-card"><span class="ribbon">Bestseller</span><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Botol-600-ml-1.webp" alt="Java 600 ml"></div><div class="nm">Botol 600ml</div><div class="pr">Rp5.000</div><div class="rt"><b>&#9733; 4.9</b> | Terjual 10rb+</div></div>
+      <div class="p-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Botol-Besar-1500-ml-2.webp" alt="Java 1500 ml"></div><div class="nm">Botol 1.5L</div><div class="pr">Rp10.000</div><div class="rt"><b>&#9733; 4.8</b> | Terjual 7.2rb+</div></div>
+      <div class="p-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Galon-1.webp" alt="Java Galon 19L"></div><div class="nm">Galon 19L</div><div class="pr">Rp18.000</div><div class="rt"><b>&#9733; 4.9</b> | Terjual 5.1rb+</div></div>
+      <div class="p-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Botol-220-ml-1.webp" alt="Java 330 ml"></div><div class="nm">Botol 330ml</div><div class="pr">Rp3.500</div><div class="rt"><b>&#9733; 4.8</b> | Terjual 4.6rb+</div></div>
+    </div>
+  </section>
+
+  <a class="wa-bar" href="https://javaairmineral.com/agen.html">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5C6.8 2.5 2.6 6.6 2.6 11.8C2.6 13.6 3.1 15.3 4 16.8L2.4 21.5L7.3 20.2C8.7 21 10.3 21.4 12 21.4C17.2 21.4 21.4 17.3 21.4 12.1C21.4 6.9 17.2 2.5 12 2.5ZM17.6 15.9C17.4 16.5 16.4 17 15.8 17.1C15.3 17.2 14.6 17.3 12.3 16.6C9.2 15.6 7.2 13.2 7 12.9C6.8 12.6 5.5 10.9 5.5 9.1C5.5 7.3 6.4 6.4 6.7 6.1C7 5.7 7.4 5.7 7.7 5.7H8.4C8.6 5.7 8.9 5.7 9.1 6.2L10.2 8.9C10.3 9.1 10.3 9.4 10.1 9.7L9.4 10.6C9.3 10.8 9.2 11 9.4 11.3C9.7 11.8 10.7 13.4 12.7 14.6C13.2 14.9 13.6 15.1 13.9 15C14.2 14.9 14.4 14.6 14.7 14.2L15.4 13.4C15.6 13.1 15.9 13.1 16.2 13.2L18.7 14.4C19 14.6 19.2 14.7 19.2 14.9C19.2 15 19 15.3 17.6 15.9Z" transform="scale(0.96) translate(0.5,0.5)"/></svg>
+    <div><b>Pesan via WhatsApp</b><span>Respon cepat &#8226; Chat admin sekarang</span></div>
+  </a>
+
+  <div class="trust">
+    <div><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 6V11C4 16 7.4 19.7 12 21C16.6 19.7 20 16 20 11V6L12 3Z" fill="#12a0e8"/><path d="M8.8 12L11.2 14.4L15.4 9.8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>BPOM RI Terdaftar</div>
+    <div><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="#0a5cad" stroke-width="2"/><path d="M8 15.5C8.7 16.6 9.8 17.2 11 17.2C12.6 17.2 13.7 16.3 13.7 15C13.7 12.4 8.3 13.4 8.3 10.6C8.3 9.4 9.3 8.6 10.7 8.6C11.8 8.6 12.7 9.1 13.3 9.9" stroke="#0a5cad" stroke-width="1.7" stroke-linecap="round"/></svg>SNI Bersertifikat</div>
+    <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M2.5 6.5H14.5V15.5H2.5V6.5Z" fill="#12a0e8"/><path d="M14.5 10H18L21.5 13.5V15.5H14.5V10Z" fill="#0a5cad"/><circle cx="6.5" cy="17.5" r="1.9" fill="#0a2a4a"/><circle cx="17" cy="17.5" r="1.9" fill="#0a2a4a"/></svg>Diantar Sampai Rumah</div>
+  </div>
+
+<style>
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:14px 2px 4px; }
+  .g-card { background:#fff; border-radius:18px; padding:12px; box-shadow:0 5px 16px rgba(10,90,160,.1); }
+  .g-card .ph { height:104px; display:flex; align-items:center; justify-content:center; }
+  .g-card .ph img { max-height:98px; max-width:92%; object-fit:contain; }
+  .g-card .nm { font-weight:700; font-size:14px; margin-top:8px; }
+  .g-card .ds { font-size:11.5px; color:#7d99ad; margin-top:2px; line-height:1.4; }
+  .g-card .pr { font-weight:900; color:#0a6fd0; font-size:16px; margin-top:5px; }
+  .chips { display:flex; gap:8px; flex-wrap:wrap; padding:12px 2px 2px; }
+  .chip { background:#fff; border:1.5px solid #bfe0f5; color:#0a5cad; font-weight:700; font-size:12.5px; padding:8px 14px; border-radius:999px; }
+  .feats { display:grid; grid-template-columns:1fr 1fr; gap:11px; padding:14px 2px 2px; }
+  .feat { background:#fff; border-radius:16px; padding:14px 13px; box-shadow:0 4px 12px rgba(10,90,160,.08); }
+  .feat b { font-size:13.5px; display:block; }
+  .feat p { font-size:12px; color:#5b7d94; margin-top:3px; line-height:1.45; }
+  .steps { display:flex; flex-direction:column; gap:9px; padding:14px 2px 2px; }
+  .step { display:flex; gap:12px; align-items:flex-start; background:#fff; border-radius:14px; padding:13px 14px; box-shadow:0 4px 12px rgba(10,90,160,.08); font-size:13.5px; line-height:1.5; }
+  .num { flex:0 0 26px; width:26px; height:26px; border-radius:50%; background:#0a86d9; color:#fff; font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .areas { display:grid; grid-template-columns:1fr 1fr; gap:11px; padding:14px 2px 2px; }
+  .area { background:linear-gradient(150deg,#0a6fd0,#12a0e8); color:#fff; border-radius:16px; padding:15px 14px; }
+  .area b { font-size:16px; }
+  .area p { font-size:12px; color:#dcf3ff; margin-top:3px; }
+  .wide { display:block; text-align:center; margin:13px 2px 0; background:#fff; border:2px solid #0a6fd0; color:#0a6fd0; font-weight:800; padding:13px; border-radius:999px; text-decoration:none; font-size:14px; }
+  details { background:#fff; border-radius:14px; padding:13px 15px; margin-top:9px; box-shadow:0 4px 12px rgba(10,90,160,.07); }
+  summary { font-weight:700; font-size:14px; cursor:pointer; }
+  details p { font-size:13px; color:#41657e; line-height:1.55; margin-top:7px; }
+  .cod { text-align:center; font-size:12px; color:#7d99ad; padding:16px 20px 4px; font-weight:600; }
+  footer { text-align:center; font-size:12px; color:#7d99ad; padding:8px 20px 18px; line-height:1.7; }
+  .bnav { position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:440px; z-index:30;
+    background:#fff; display:grid; grid-template-columns:repeat(4,1fr); padding:9px 6px 11px;
+    box-shadow:0 -4px 18px rgba(10,90,160,.13); }
+  .bnav a { text-align:center; text-decoration:none; color:#8aa5ba; font-size:11px; font-weight:700; }
+  .bnav a.on { color:#0a6fd0; }
+  .bnav svg { display:block; margin:0 auto 3px; }
+</style>
+
+  <section id="semua-produk">
+    <div class="sec-head"><h2>Semua Produk</h2></div>
+    <p class="sub">Enam varian kemasan untuk rumah, kantor, perjalanan, sampai acara besar.</p>
+    <div class="grid">
+      <div class="g-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Galon-1.webp" alt="Java 19 L"></div><div class="nm">Galon 19L</div><div class="ds">Untuk kantor &amp; rumah</div><div class="pr">Rp18.000</div></div>
+      <div class="g-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Botol-Besar-1500-ml-2.webp" alt="Java 1500 ml"></div><div class="nm">Botol 1.5L</div><div class="ds">Berbagi bersama keluarga</div><div class="pr">Rp10.000</div></div>
+      <div class="g-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Botol-600-ml-1.webp" alt="Java 600 ml"></div><div class="nm">Botol 600ml</div><div class="ds">Sempurna untuk sehari-hari</div><div class="pr">Rp5.000</div></div>
+      <div class="g-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Botol-220-ml-1.webp" alt="Java 330 ml"></div><div class="nm">Botol 330ml</div><div class="ds">Praktis untuk perjalanan</div><div class="pr">Rp3.500</div></div>
+      <div class="g-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Gelas-220-ml_-1.webp" alt="Java Gelas 220 ml"></div><div class="nm">Gelas 220ml</div><div class="ds">Praktis untuk acara &amp; hajatan</div><div class="pr">Rp1.500</div></div>
+      <div class="g-card"><div class="ph"><img src="https://javaairmineral.com/wp-content/uploads/2025/12/Java-Gelas-Kecil-1.webp" alt="Java Gelas 120 ml"></div><div class="nm">Gelas 120ml</div><div class="ds">Ukuran mini, sekali teguk</div><div class="pr">Rp1.000</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Dari Mata Air Pegunungan</h2></div>
+    <p class="sub">Tersaring alami melalui lapisan batuan — kemurnian dan mineralnya terjaga sejak dari sumbernya, lalu diproses dengan filtrasi modern tanpa mengubah mineral alaminya.</p>
+    <div class="chips">
+      <span class="chip">Gunung Merbabu</span>
+      <span class="chip">Telomoyo</span>
+      <span class="chip">Gunung Gajah</span>
+    </div>
+    <div class="feats">
+      <div class="feat"><b>Standar SNI</b><p>Jaminan mutu sesuai standar nasional Indonesia.</p></div>
+      <div class="feat"><b>Tersertifikasi BPOM</b><p>Terdaftar dan diawasi Badan POM.</p></div>
+      <div class="feat"><b>Uji Lab Berkala</b><p>Mineral &amp; mikrobiologi diuji rutin di laboratorium.</p></div>
+      <div class="feat"><b>Filtrasi Modern</b><p>Disaring canggih, mineral alami tetap utuh.</p></div>
+    </div>
+  </section>
+
+  <section id="pesan">
+    <div class="sec-head"><h2>Cara Pesan</h2></div>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><span>Cari agen resmi terdekat dari area kamu di daftar agen.</span></div>
+      <div class="step"><span class="num">2</span><span>Hubungi agennya lewat telepon / WhatsApp, sebutkan produk dan jumlahnya.</span></div>
+      <div class="step"><span class="num">3</span><span>Pesanan diantar ke rumah atau tempat usaha kamu. Gampang.</span></div>
+    </div>
+  </section>
+
+  <section id="agen">
+    <div class="sec-head"><h2>Agen Resmi</h2></div>
+    <p class="sub">50+ agen &amp; outlet di Jawa Tengah:</p>
+    <div class="areas">
+      <div class="area"><b>Semarang</b><p>27 agen &amp; outlet</p></div>
+      <div class="area"><b>Salatiga</b><p>10 agen &amp; outlet</p></div>
+      <div class="area"><b>Ambarawa</b><p>5 agen &amp; outlet</p></div>
+      <div class="area"><b>Ungaran</b><p>8 agen &amp; outlet</p></div>
+    </div>
+    <a class="wide" href="https://javaairmineral.com/agen.html">Lihat Semua Agen &amp; Nomor Telepon</a>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head"><h2>Sering Ditanyakan</h2></div>
+    <details><summary>Dari mana sumber air Java Air Mineral?</summary><p>Dari sumber mata air murni di pegunungan Merbabu, Telomoyo, dan Gunung Gajah, Jawa Tengah — tersaring alami melalui lapisan batuan.</p></details>
+    <details><summary>Apakah memenuhi standar mutu?</summary><p>Ya. Java Air Mineral berstandar SNI dan tersertifikasi BPOM, dengan pengujian laboratorium berkala untuk kandungan mineral dan mikrobiologi.</p></details>
+    <details><summary>Kemasan apa saja yang tersedia?</summary><p>Galon 19L, botol 1500 ml, 600 ml, dan 330 ml, serta gelas 220 ml dan 120 ml.</p></details>
+    <details><summary>Di mana saya bisa membeli?</summary><p>Melalui agen resmi kami di Salatiga, Ambarawa, Ungaran, dan Semarang — lihat bagian Agen untuk daftar lengkapnya.</p></details>
+  </section>
+
+  <p class="cod">Pembayaran COD Tersedia &#8226; 100% Kualitas Terjamin</p>
+  <footer>
+    JAVA AIR MINERAL — Air Mineral Murni dari Alam<br>
+    Salatiga &#8226; Ambarawa &#8226; Ungaran &#8226; Semarang &#8226; javaairmineral.com
+  </footer>
+
+  <div class="bnav">
+    <a class="on" href="#"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M4 11L12 4L20 11V20H14.5V14.5H9.5V20H4V11Z" fill="#0a6fd0"/></svg>Beranda</a>
+    <a href="#produk"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M5 8H19L18.2 19H5.8L5 8Z" stroke="#8aa5ba" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 10V6.5C8.5 4.8 10 3.5 12 3.5C14 3.5 15.5 4.8 15.5 6.5V10" stroke="#8aa5ba" stroke-width="2"/></svg>Produk</a>
+    <a href="#agen"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M6 3.5H18V20.5H6V3.5Z" stroke="#8aa5ba" stroke-width="2"/><path d="M9.5 8H14.5M9.5 12H14.5" stroke="#8aa5ba" stroke-width="2" stroke-linecap="round"/></svg>Agen</a>
+    <a href="#pesan"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#8aa5ba" stroke-width="2"/><path d="M4.5 20.5C5.5 16.8 8.4 15 12 15C15.6 15 18.5 16.8 19.5 20.5" stroke="#8aa5ba" stroke-width="2" stroke-linecap="round"/></svg>Pesan</a>
+  </div>
+
+</div>
+</body>
+</html>
